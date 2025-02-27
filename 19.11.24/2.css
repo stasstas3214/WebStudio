@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -16,16 +17,46 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* Хедер */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Секция hero с фоном */
 .hero {
-    background-color: #2c2c2c;
+    background: url('21.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
     text-align: center;
     padding: 100px 20px;
 }
+
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+
 .hero .btn {
     display: inline-block;
     background-color: #007bff;
@@ -36,62 +67,51 @@ body {
     font-size: 1.1rem;
     transition: background-color 0.3s ease;
 }
+
 .hero .btn:hover {
     background-color: #0056b3;
 }
-.benefits {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+
+/* Преимущества */
+.advantages {
+    text-align: center;
     padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
+    background: #f8f9fa;
 }
-.benefit {
-    text-align: center;
+
+.advantages-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.advantage {
+    width: 200px;
     padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.advantage img {
+    width: 170px;
+    margin-bottom: 100px;
+}
+
+/* Секция услуг */
 .services {
     padding: 50px 20px;
     text-align: center;
 }
+
+/* Команда */
 .team {
     background-color: #c9cfcf;
     padding: 35px 2px;
     text-align: center;
 }
-footer {
-    background-color: #2c2c2c;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-    font-size: 0.9rem;
-}
-img {
-    width: 300px; 
-    height: 200px; 
-   
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-}
-.nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-.nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+
+/* Список преимуществ, услуг, команды */
 .benefits ul, .service-list, .team-list {
     list-style: none;
     display: grid;
@@ -101,33 +121,17 @@ img {
     margin: 0;
 }
 
+/* Картинки */
+img {
+    width: 300px; 
+    height: 200px; 
+}
 
-
-
-
-
-
-
-
-
-.advantages {
+/* Футер */
+footer {
+    background-color: #353333;
+    color: white;
     text-align: center;
-    padding: 50px 20px;
-    background: #f8f9fa;
-}
-.advantages-container {
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-}
-.advantage {
-    width: 200px;
-    padding: 20px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.advantage img {
-    width: 170px;
-    margin-bottom: 100px;
+    padding: 20px 10px;
+    font-size: 0.9rem;
 }
