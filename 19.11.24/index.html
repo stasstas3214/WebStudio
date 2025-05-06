@@ -3,80 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
-    <link rel="stylesheet" href="2.css">
+    <title>WebStudio | Головна</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            color: #212121;
+            background-color: #fff;
+            line-height: 1.5;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            background: url('21.jpg') center/cover no-repeat;
+            color: white;
+            padding: 30px 0;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo span {
+            color: #2196F3;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+        .contact-info a {
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+        .header-content {
+            text-align: center;
+        }
+        .header-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .feature img {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        .feature h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .services {
+            padding: 60px 0;
+        }
+        .services h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .services-grid img {
+            width: 100%;
+            height: auto;
+        }
+        .team {
+            background-color: #F5F4FA;
+            padding: 60px 0;
+        }
+        .team h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .team-member {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+
+
+        .socials a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin: 0 5px;
+    border-radius: 50%; 
+}
+
+.socials a img,
+.socials a svg {
+    width: 35px;  
+    height: 35px;
+}
+
+
+
+
+        .socials a {
+            margin: 0 5px;
+        }
+        .clients {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .clients-grid {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .clients-grid img {
+            max-height: 50px;
+        }
+        .footer {
+            background-color: #2F303A;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer address,
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-style: normal;
+        }
+    </style>
+   
 </head>
 <body>
-    <header>
-        <div class="container header">
-            <div class="logo">
-                <h1>webstudio</h1>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a href="index2.html" class="btn">сторинка 2</a>
+                <div class="logo">Web<span>Studio</span></div>
+                <nav class="nav">
+                    <a href="#studio">Студія</a>
+                    <a href="#portfolio">Портфоліо</a>
+                    <a href="#contacts">Контакти</a>
+                </nav>
+                <div class="contact-info">
+                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                </div>
             </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#benefits">Переваги</a></li>
-                    <li><a href="#services">Послуги</a></li>
-                    <li><a href="#team">Команда</a></li>
-                    <li><a href="#contacts">Контакти</a></li>
-                    <h3><a href="index2.html">Сторінка 2</a></h3>
-                </ul>
-            </nav>
-            <div class="contacts">
-                <a href="tel:+380661111111">+38 (066) 111 11 11</a>
-                <a href="mailto:info@webstudio.com">info@webstudio.com</a>
+            <div class="header-content">
+                <h1>Ефективні рішення для вашого бізнесу</h1>
+                <button class="btn">Замовити послугу</button>
             </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Ефективні рішення для вашого бізнесу</h1>
-            <a href="#services" class="btn">Замовити послугу</a>
+    <section class="features container">
+        <div class="feature">
+            <img src="17.png" alt="Увага до деталей">
+            <h3>Увага до деталей</h3>
+            <p>Ідейні міркування, і навіть початок повсякденної роботи.</p>
+        </div>
+        <div class="feature">
+            <img src="18.png" alt="Пунктуальність">
+            <h3>Пунктуальність</h3>
+            <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+        </div>
+        <div class="feature">
+            <img src="19.png" alt="Планування">
+            <h3>Планування</h3>
+            <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+        </div>
+        <div class="feature">
+            <img src="20.png" alt="Сучасні технології">
+            <h3>Сучасні технології</h3>
+            <p>Значимість цих проблем настільки очевидна.</p>
         </div>
     </section>
 
-    <section class="advantages">
-        <div class="advantages-container">
-            <div class="advantage">
-                <img src="17.png" alt="Иконка 1">
-                <h3>Увага до деталей</h3>
-                <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-            </div>
-            <div class="advantage">
-                <img src="18.png" alt="Иконка 2">
-                <h3>Пунктуальність</h3>
-                <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-            </div>
-            <div class="advantage">
-                <img src="19.png" alt="Иконка 3">
-                <h3>Планування</h3>
-                <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-            </div>
-            <div class="advantage">
-                <img src="20.png" alt="Иконка 4">
-                <h3>Сучасні технології</h3>
-                <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-            </div>
+    <section class="services container">
+        <h2>Чим ми займаємося</h2>
+        <div class="services-grid">
+            <img src="4.jpeg" alt="Service 1">
+            <img src="2.jpeg" alt="Service 2">
+            <img src="3.jpeg" alt="Service 3">
         </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>Наше портфоліо</h2>
-            <div class="portfolio-gallery">
-                <div class="portfolio-item"><img src="8.jpeg" alt="Технокрак"><p>Технокрак</p><span>Веб-сайт</span></div>
-                <div class="portfolio-item"><img src="9.jpeg" alt="Постер"><p>Постер New Orlean vs Golden Star</p><span>Дизайн</span></div>
-                <div class="portfolio-item"><img src="10.jpeg" alt="Ресторан"><p>Ресторан Seafood</p><span>Додаток</span></div>
-                <div class="portfolio-item"><img src="11.jpeg" alt="Проект Prime"><p>Проект Prime</p><span>Маркетинг</span></div>
+    <section class="team container">
+        <h2>Наша команда</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="7.jpeg" alt="Ігор Дем'яненко">
+                <h3>Ігор Дем'яненко</h3>
+                <p>Product Designer</p>
+                <div class="socials">
+                    <a href="#"><img src="Ellipse.png" alt="Instagram"></a>
+                    <a href="#"><img src="Ellipse (1).png" alt="Twitter"></a>
+                    <a href="#"><img src="Ellipse (2).png" alt="Facebook"></a>
+                    <a href="#"><img src="Ellipse (3).png" alt="LinkedIn"></a>
+                </div>
             </div>
+            <div class="team-member">
+                <img src="6.jpeg" alt="Ольга Рєпіна">
+                <h3>Ольга Рєпіна</h3>
+                <p>Frontend Developer</p>
+                <div class="socials">
+                    <a href="#"><img src="Ellipse.png" alt="Instagram"></a>
+                    <a href="#"><img src="Ellipse (1).png" alt="Twitter"></a>
+                    <a href="#"><img src="Ellipse (2).png" alt="Facebook"></a>
+                    <a href="#"><img src="Ellipse (3).png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="3.jpeg" alt="Микола Тарасов">
+                <h3>Микола Тарасов</h3>
+                <p>Marketing</p>
+                <div class="socials">
+                    <a href="#"><img src="Ellipse.png" alt="Instagram"></a>
+                    <a href="#"><img src="Ellipse (1).png" alt="Twitter"></a>
+                    <a href="#"><img src="Ellipse (2).png" alt="Facebook"></a>
+                    <a href="#"><img src="Ellipse (3).png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="5.jpeg" alt="Михайло Єрмаков">
+                <h3>Михайло Єрмаков</h3>
+                <p>UI Designer</p>
+                <div class="socials">
+                    <a href="#"><img src="Ellipse.png" alt="Instagram"></a>
+                    <a href="#"><img src="Ellipse (1).png" alt="Twitter"></a>
+                    <a href="#"><img src="Ellipse (2).png" alt="Facebook"></a>
+                    <a href="#"><img src="Ellipse (3).png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            
+    </section>
+
+    <section class="clients container">
+        <h2>Постійні клієнти</h2>
+        <div class="clients-grid">
+            <img src="Client 1.png" alt="Client 1">
+            <img src="Client 2.png" alt="Client 2">
+            <img src="Client 3.png" alt="Client 3">
+            <img src="Client 4.png" alt="Client 4">
+            <img src="Client 5.png" alt="Client 5">
+            <img src="Client 6.png" alt="Client 6">
         </div>
     </section>
 
-    <footer id="contacts">
+    <footer class="footer">
         <div class="container">
-            <p>© WebStudio</p>
-            <p>м. Київ, вул. Набережна, 26</p>
-            <p>Email: info@webstudio.com | Телефон: +38 (066) 111 11 11</p>
+            <div class="footer-top">
+                <div class="logo">Web<span>Studio</span></div>
+                <address>
+                    м. Київ, пр-т Лесі Українки, 26<br>
+                    <a href="mailto:info@devstudio.com">info@devstudio.com</a><br>
+                    +38 096 111 11 11
+                </address>
+            </div>
+            <div class="footer-bottom">
+                <p>Приєднуйтесь:</p>
+                <div class="socials">
+                    <a href="#"><img src="insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="twiter.png" alt="Twitter"></a>
+                    <a href="#"><img src="fesbook.png" alt="Facebook"></a>
+                    <a href="#"><img src="in.png" alt="LinkedIn"></a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
