@@ -1,0 +1,48 @@
+<style>
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #2F303A;
+    color: white;
+    transition: left 0.3s ease;
+    z-index: 2000;
+    padding: 30px 20px;
+  }
+
+  .side-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .side-hover-zone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    z-index: 1999;
+  }
+
+  .side-hover-zone:hover + .side-menu,
+  .side-menu:hover {
+    left: 0;
+  }
+</style>
+
+<!-- Область, при наведении на которую меню появляется -->
+<div class="side-hover-zone"></div>
+
+<!-- Боковое меню -->
+<div class="side-menu">
+  <h3>Меню</h3>
+  <a href="#">Головна</a>
+  <a href="#">Студія</a>
+  <a href="#">Портфоліо</a>
+  <a href="#contacts">Контакти</a>
+</div>
